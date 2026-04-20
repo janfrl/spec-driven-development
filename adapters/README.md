@@ -6,14 +6,14 @@ How to load this methodology into different tools. The content in `workflow/` an
 
 ## Claude Code
 
-The whole `spec-driven-workflow/` directory *is* a skill. Drop it into a skills directory:
+The whole `spec-driven-development/` directory *is* a skill. Drop it into a skills directory:
 
 ```bash
 # User-level (all projects)
-git clone <repo-url> ~/.claude/skills/spec-driven-workflow
+git clone <repo-url> ~/.claude/skills/spec-driven-development
 
 # Project-level
-git clone <repo-url> ./.claude/skills/spec-driven-workflow
+git clone <repo-url> ./.claude/skills/spec-driven-development
 ```
 
 Claude auto-discovers it via `SKILL.md`. Invoke by mentioning the workflow: "Let's start a new project using the spec-driven workflow," or "apply the feature-spec phase."
@@ -31,9 +31,9 @@ Two options:
 Vercel's skill directory differs from Claude's. Rather than duplicating, symlink:
 
 ```bash
-# Already cloned to ~/.claude/skills/spec-driven-workflow
+# Already cloned to ~/.claude/skills/spec-driven-development
 mkdir -p ~/.agents/skills
-ln -s ~/.claude/skills/spec-driven-workflow ~/.agents/skills/spec-driven-workflow
+ln -s ~/.claude/skills/spec-driven-development ~/.agents/skills/spec-driven-development
 ```
 
 Edit in one place, both tools see updates. (If the Vercel path differs on your install, check their current docs — the symlink pattern still applies.)

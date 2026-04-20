@@ -19,7 +19,7 @@ Each phase has its own file in `workflow/`. Read them in order.
 ## File layout
 
 ```
-spec-driven-workflow/
+spec-driven-development/
 ├── SKILL.md            ← Claude skill entry point (frontmatter + routing)
 ├── README.md           ← you are here
 ├── workflow/           ← the methodology (source of truth)
@@ -37,10 +37,10 @@ Clone into your skills directory. The whole repo *is* a skill:
 
 ```bash
 # global (available in all projects)
-git clone <this-repo> ~/.claude/skills/spec-driven-workflow
+git clone <this-repo> ~/.claude/skills/spec-driven-development
 
 # or per-project
-git clone <this-repo> ./.claude/skills/spec-driven-workflow
+git clone <this-repo> ./.claude/skills/spec-driven-development
 ```
 
 Invoke with: *"Let's start a new project using the spec-driven workflow."* Claude will load `SKILL.md` automatically.
@@ -54,9 +54,9 @@ Create a Project, upload the contents of `workflow/` and `templates/` as project
 Vercel's agent skills expect a different directory. Symlink rather than duplicate:
 
 ```bash
-# Assuming you've already cloned to ~/.claude/skills/spec-driven-workflow
+# Assuming you've already cloned to ~/.claude/skills/spec-driven-development
 mkdir -p .agents/skills
-ln -s ~/.claude/skills/spec-driven-workflow .agents/skills/spec-driven-workflow
+ln -s ~/.claude/skills/spec-driven-development .agents/skills/spec-driven-development
 ```
 
 Edit in one place, both tools see the update.

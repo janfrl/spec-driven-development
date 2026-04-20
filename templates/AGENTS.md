@@ -8,7 +8,7 @@
 
 ## Methodology
 
-This project follows the spec-driven workflow: [link to your spec-driven-workflow repo or location of skill].
+This project follows the spec-driven workflow: [link to your spec-driven-development repo or location of skill].
 
 - `constitution.md` — non-negotiable rules. Read before proposing any change.
 - `specs/` — one file per feature; each has a matching `-plan.md`.

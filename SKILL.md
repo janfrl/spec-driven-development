@@ -1,5 +1,5 @@
 ---
-name: spec-driven-workflow
+name: spec-driven-development
 description: Structured workflow for building apps with AI agents — brainstorm, concept, constitution, spec, plan, TDD implementation, review. Use when the user wants to start a new project or feature with AI assistance, or says things like "let's plan this out", "new project", "new feature", or references spec-driven / SDD workflow.
 ---
 
